@@ -55,7 +55,7 @@ this.lastTap = 0;
 el.addEventListener('click', () => {
 const now = Date.now();
 if (now - this.lastTap < 300) {
-el.object3D.scale.set(this.defaultScale, this.defaultScale, this.defaultScale);
+el.object3D.scale.set(1, 1, 1);
 el.object3D.rotation.set(0, 0, 0);
 this.currentScale = this.defaultScale;
 }
